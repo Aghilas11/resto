@@ -1,0 +1,380 @@
+@font-face {
+    font-family: "allura";
+    src: url(./fonts/Allura/Allura-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(./fonts/poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(./fonts/roboto/Roboto-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    background: url(./img/bg-slider-06.jpg) center/cover;
+    color: white;
+    height: 100vh;
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-family: "allura", sans-serif;
+        font-size: 3rem;
+        display: flex;
+        width: 100%;
+        padding-right: 100px;
+        text-transform: capitalize;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        transform: translateX(10%);
+
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                list-style-type: none;
+                margin: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .intro {
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        .intro-container {
+            width: 50%;
+            height: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                font-family: "allura";
+                color: rgb(173, 115, 6);
+                font-size: 3.2rem;
+                font-weight: 100;
+                height: 50px;
+            }
+
+            h1 {
+                font-family: "poppins";
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-size: 4rem;
+                height: 80px;
+            }
+
+            img {
+                padding: 20px;
+            }
+
+            p {
+                font-family: "roboto";
+                text-transform: uppercase;
+                letter-spacing: 6px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.store {
+    .store-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .store-right {
+            background: url(./img/store-01.jpg) center/cover;
+        }
+
+        .store-left {
+            margin: 10px;
+            border: 1px dashed rgb(173, 115, 6);
+
+            h2 {
+                font-family: "allura";
+                color: rgb(173, 115, 6);
+                text-transform: capitalize;
+                font-size: 2rem;
+                height: 30px;
+                margin: 10px;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                margin: 10px;
+            }
+
+            img {
+                padding: 20px;
+            }
+
+            p {
+                font-family: "roboto";
+                font-size: 0.8rem;
+            }
+
+            .chef-1 {
+                h3 {
+                    text-transform: capitalize;
+                }
+
+                p {
+                    padding-bottom: 20px;
+                    text-transform: uppercase;
+                    color: gray;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.discover {
+    background-color: rgb(62, 62, 62);
+
+    .discover-container {
+        width: 80%;
+        margin: 0 auto;
+
+
+        .discover-top {
+            h3 {
+                font-family: "allura", sans-serif;
+                color: rgb(173, 115, 6);
+                font-size: 2.5rem;
+                text-transform: capitalize;
+                padding: 60px;
+            }
+
+            img {
+                padding: 0 0 50px 0;
+            }
+
+            nav {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    color: white;
+                    list-style-type: none;
+                    font-weight: 100;
+                    font-family: "roboto" sans-serif;
+                    letter-spacing: 3px;
+
+                    li {
+                        margin: 30px;
+                        text-transform: capitalize;
+                        cursor: pointer;
+                        border-bottom: 1px solid rgba(209, 199, 199, 0.488);
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        .discover-buttom {
+            width: 100%;
+            background-color: white;
+            padding: 30px;
+            border-top: 5px solid rgb(173, 115, 6);
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+
+            .dish {
+                width: 80%;
+                padding: 10px;
+                margin: 20px;
+                border-bottom: 1px dashed rgba(128, 128, 128, 0.375);
+                display: grid;
+                grid-template-columns: 30% 70% 20%;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                    "img h vi"
+                    "img p span";
+
+                img {
+                    grid-area: img;
+                    border-radius: 150px;
+                }
+
+                h4 {
+                    grid-area: h;
+                    text-transform: uppercase;
+                    font-size: 0.9rem;
+                    text-align: left;
+                    padding-left: 10px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                p {
+                    grid-area: p;
+                    text-align: left;
+                    padding-left: 10px;
+                    color: rgb(124, 122, 122);
+                }
+
+                span {
+                    grid-area: span;
+                    transform: translateX(-100%);
+                    transform: translateY(100%);
+                    margin: 0 25px 0;
+                    color: rgb(173, 115, 6);
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.booking {
+
+    background-color: rgb(62, 62, 62);
+
+    .booking-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 33% 66%;
+
+        .booking-left {
+            display: grid;
+            margin: 50px 0 50px 50px;
+            background-color: black;
+            padding: 50px;
+
+
+            h3 {
+                font-family: "allura", sans-serif;
+                color: rgb(173, 115, 6);
+                text-transform: capitalize;
+                font-size: 2.5rem;
+                height: 40px;
+            }
+
+            span {
+                font-family: "roboto", sans-serif;
+                color: white;
+                text-transform: uppercase;
+                font-style: 3rem;
+                font-weight: bold;
+                letter-spacing: 3px;
+                height: 30px;
+            }
+
+
+
+            .mf,
+            .ss {
+                display: grid;
+                justify-content: center;
+
+                h4 {
+                    color: rgb(173, 115, 6);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    padding: 20px;
+                    height: 40px;
+                }
+
+                p {
+                    color: white;
+                    width: 239px;
+                    height: 50px;
+                }
+            }
+
+            p {
+                color: rgb(173, 115, 6);
+                padding-top: 20px;
+                font-weight: bold;
+            }
+        }
+
+        .booking-right {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 50px 50px 0;
+            background-color: white;
+
+            h3 {
+                color: rgb(173, 115, 6);
+                text-transform: capitalize;
+                font-weight: 100;
+                font-family: "allura", sans-serif;
+                font-size: 2.5rem;
+                height: 40px;
+            }
+
+            p {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            form {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                grid-template-rows: 1fr 1fr;
+
+                input,
+                select {
+                    padding: 20px;
+                    border: transparent;
+                    border-bottom: 1px solid rgba(128, 128, 128, 0.388);
+                    width: 80%;
+                }
+            }
+
+            button {
+                width: 30%;
+                margin: 0 auto;
+                cursor: pointer;
+                color: white;
+                background: gray;
+                border: transparent;
+                border-radius: 20px;
+                padding: 15px;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
